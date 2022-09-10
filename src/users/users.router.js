@@ -15,7 +15,7 @@ router.route('/me')
     .delete(passport.authenticate('jwt',{session: false}), userServices.removeMyUser)
 
 router.route('/me/posts')
-    .get(passport.authenticate('jwt', {session: false}), postServices.getUserPostById)
+    .get(passport.authenticate('jwt', {session: false}), postServices.getMyPost)
 
 router.route('/:id')
     .get(passport.authenticate('jwt', {session: false}),userServices.getById)

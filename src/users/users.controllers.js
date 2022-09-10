@@ -1,17 +1,17 @@
 const uuid = require('uuid');
-const crypt = require('../utils/crypt')
+const crypt = require('../utils/crypt');
 
 const userDB = [{
   "id": "74cd6011-7e76-4d6d-b25b-1d6e4182ec2f",
-  "first_name": "Fer",
-  "last_name": "López",
-  "email": "fer.lop@academlo.com",
+  "first_name": "Sahid",
+  "last_name": "Kick",
+  "email": "sahid.kick@academlo.com",
   "password": "$2b$10$TNGcRFonQH98rVqFaBVfpOEEv2Xcu5ej14tWqKim3z3L6Tr.ZIaqC",
   "phone": "1234567890",
-  "birthday_date": "23/05/1985",
+  "birthday_date": "2000/10/22",
   "rol": "normal",
   "profile_image": "",
-  "country": "Colombia",
+  "country": "Mexico",
   "is_active": true,
   "verified": false
 }]

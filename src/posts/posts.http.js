@@ -141,11 +141,11 @@ const removeUserPost = (req, res) => {
   }
 };
 
-/* const getUserPost = (req, res) => {
+const getMyPost = (req, res) => {
         const userID = req.user.id
-        const data = postDB.filter(post => post.user_id === userID)
+        const data = postControllers.getUserPost(userID)
         return res.status(200).json(data)
-} */
+} 
 
 module.exports = {
   getAll,
@@ -154,7 +154,7 @@ module.exports = {
   remove,
   edit,
   editUserPost,
-  /* getMyPost, */
+  getMyPost,
   removeUserPost,
   getUserPostById
 };
